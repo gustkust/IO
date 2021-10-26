@@ -1,4 +1,4 @@
-public class Main {
+public class man {
   int x = 7;
 
   public static void main(String[] args) {
