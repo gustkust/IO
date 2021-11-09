@@ -86,12 +86,13 @@ Osoba chcąca zakupić produkt na aukcji.
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2)
 
 **Scenariusz główny:**
-1. System generuje dane przesyłki.
-2. System informuje kupującego o danych przesyłki.
-3. System prosi [sprzedającego](#ac1) o wysłanie produktu.
-4. [Sprzedający](#ac1) wysyła produkt.
-5. System informuje [kupującego](#ac2) o wysłaniu produktu.
-6. [Kupujący](#ac2) otrzymuje produkt.
+1. [Kupujący](#ac1) wygrywa aukcję.
+2. System generuje dane przesyłki.
+3. System informuje kupującego o danych przesyłki.
+4. System prosi [sprzedającego](#ac1) o wysłanie produktu.
+5. [Sprzedający](#ac1) wysyła produkt.
+6. System informuje [kupującego](#ac2) o wysłaniu produktu.
+7. [Kupujący](#ac2) otrzymuje produkt.
 
 **Scenariusze alternatywne:** 
 
@@ -126,7 +127,7 @@ Osoba chcąca zakupić produkt na aukcji.
 ---
 
 
-## Obiewkty biznesowe (inaczje obiekty dziedzinowe lub informatycjne)
+## Obiekty biznesowe (inaczje obiekty dziedzinowe lub informatycjne)
 
 ### BO1: Aukcja
 
@@ -155,6 +156,6 @@ Aukcję wygrywa ten z [Kupujący](#ac2)ch, który w momencie jej zakończenia (u
 | Przypadek użycia                                  | Aukcja | Produkt |
 | ------------------------------------------------- | ------ | ------- |
 | UC1: Wystawienia produktu na aukcję               |    C   |    C    |
-| UC2: Przekazania należnoći                        |   R,U  |         |
-| UC3: Przekazania produktu                         |    D   |   R,D   |
+| UC2: Przekazania należnoći                        |  R, U  |         |
+| UC3: Przekazania produktu                         |    D   |   R, D  |
 
