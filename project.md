@@ -81,28 +81,35 @@ Osoba chcąca zakupić produkt na aukcji.
 <a id="uc2"></a>
 ### UC2: Przekazanie produktu
 
-**Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
+**Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2)
 
 **Scenariusz główny:**
 1. System generuje dane przesyłki.
 2. System informuje kupującego o danych przesyłki.
-3. System prosi sprzedającego o wysłanie produktu.
+3. System prosi [sprzedającego](#ac1) o wysłanie produktu.
 4. [Sprzedający](#ac1) wysyła produkt.
+5. System informuje [kupującego](#ac2) o wysłaniu produktu.
+6. [Kupujący](#ac2) otrzymuje produkt.
+
+**Scenariusze alternatywne:** 
+
+6.A. [Kupujący](#ac2) nie otrzymał produktu.
+* 6.A.1. Przejdź do kroku 3.
 
 ---
 
 <a id="uc3"></a>
 ### UC3: Przekazanie należności
 
-**Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
+**Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2)
 
 **Scenariusz główny:**
-1. System prosi kupującego o dane do płatności.
+1. System prosi [kupującego](#ac2) o dane do płatności.
 2. [Kupujący](#ac2) podaje dane do płatności.
 3. System weryfikuje poprawność danych.
 4. System informuje o pomyślnym przekazaniu należności.
 5. [Sprzedający](#ac1) otrzymuje należności.
-6. System informuje sprzedającego o otrzymaniu należności.
+6. System informuje [sprzedającego](#ac1) o otrzymaniu należności.
 
 **Scenariusze alternatywne:** 
 
