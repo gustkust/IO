@@ -101,6 +101,8 @@ Osoba chcąca zakupić produkt na aukcji.
 2. [Kupujący](#ac2) podaje dane do płatności.
 3. System weryfikuje poprawność danych.
 4. System informuje o pomyślnym przekazaniu należności.
+5. [Sprzedający](#ac1) otrzymuje należności.
+6. System informuje sprzedającego o otrzymaniu należności.
 
 **Scenariusze alternatywne:** 
 
