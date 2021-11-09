@@ -53,6 +53,9 @@ Osoba chcąca zakupić produkt na aukcji.
 * ...
 
 [Kupujący](#ac2)
+* [BR1](#br1): Złożenie oferty
+* [BR2](#br2): Rozstrzygnięcie aukcji
+* 
 * ...
 
 ---
