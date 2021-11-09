@@ -84,9 +84,12 @@ Osoba chcąca zakupić produkt na aukcji.
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
 **Scenariusz główny:**
-1. System prosi sprzedającego o przekazanie produktu.
-2. [Sprzedający](#ac1) przekazuje produkt.
+1. System generuje dane przesyłki.
+2. System informuje kupującego o danych przesyłki.
+3. System prosi sprzedającego o wysłanie produktu.
+4. [Sprzedający](#ac1) wysyła produkt.
 
+---
 
 <a id="uc3"></a>
 ### UC3: Przekazanie należności
@@ -104,6 +107,10 @@ Osoba chcąca zakupić produkt na aukcji.
 3.A. Podano niepoprawne lub niekompletne dane do płatności.
 * 3.A.1. System informuje o błędnie podanych danych.
 * 3.A.2. Przejdź do kroku 1.
+
+4.A. Nie udało się przekazać należności.
+* 4.A.1. System informuje o nieudanym przekazaniu należności.
+* 4.A.2. Przejdź do kroku 1.
 
 ---
 
