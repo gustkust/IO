@@ -18,8 +18,8 @@ Specyfikacja wymagań funkcjonalnych w ramach informatyzacji procesu sprzedaży 
 1. [Sprzedający](#ac1) wystawia produkt na aukcję. ([UC1](#uc1))
 2. [Kupujący](#ac2) oferuje kwotę za produkt wyższą od aktualnie najwyższej oferty. ([BR1](#br1))
 3. [Kupujący](#ac2) wygrywa aukcję. ([BR2](#br2))
-4. [Kupujący](#ac2) przekazuje należność Sprzedającemu. ([BR3](#br3))
-5. [Sprzedający](#ac1) przekazuje produkt Kupującemu. ([UC2](#uc2))
+4. [Kupujący](#ac2) przekazuje należność Sprzedającemu. ([UC2](#uc2))
+5. [Sprzedający](#ac1) przekazuje produkt Kupującemu. ([UC3](#uc3))
 
 **Scenariusze alternatywne:** 
 
@@ -50,12 +50,12 @@ Osoba chcąca zakupić produkt na aukcji.
 
 [Sprzedający](#ac1):
 * [UC1](#uc1): Wystawienie produktu na aukcję
-* [UC2](#uc2): Przekazanie produktu
+* [UC3](#uc3): Przekazanie produktu
 
 [Kupujący](#ac2)
 * [BR1](#br1): Złożenie oferty
 * [BR2](#br2): Rozstrzygnięcie aukcji
-* [BR3](#br3): Przekazanie należności
+* [UC2](#uc2): Przekazanie należności
 
 ---
 <a id="uc1"></a>
@@ -79,19 +79,34 @@ Osoba chcąca zakupić produkt na aukcji.
 ---
 
 <a id="uc2"></a>
-### UC2: ...
+### UC2: Przekazanie produktu
 
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
 **Scenariusz główny:**
-1. ...
+1. System prosi sprzedającego o przekazanie produktu.
+2. [Sprzedający](#ac1) przekazuje produkt.
+
+
+<a id="uc3"></a>
+### UC3: Przekazanie należności
+
+**Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
+
+**Scenariusz główny:**
+1. System prosi kupującego o dane do płatności.
+2. [Kupujący](#ac2) podaje dane do płatności.
+3. System weryfikuje poprawność danych.
+4. System informuje o pomyślnym przekazaniu należności.
 
 **Scenariusze alternatywne:** 
 
-1.A. ...
-* 4.A.1. ...
+3.A. Podano niepoprawne lub niekompletne dane do płatności.
+* 3.A.1. System informuje o błędnie podanych danych.
+* 3.A.2. Przejdź do kroku 1.
 
 ---
+
 
 ## Obiewkty biznesowe (inaczje obiekty dziedzinowe lub informatycjne)
 
